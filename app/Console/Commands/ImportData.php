@@ -38,7 +38,7 @@ class ImportData extends Command
      */
     public function handle()
     {
-        $filePath = storage_path('app\public\people.csv');
+        $filePath = storage_path('files\people.csv');
         $row = 0;
         if (($handle = fopen($filePath, "r")) !== false) {
             while (($data = fgetcsv($handle)) !== false) {
